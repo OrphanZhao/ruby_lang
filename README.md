@@ -86,3 +86,146 @@ BasicObject
                   # Common methods: .new, .each, .next, .peek, .rewind, .size, .with_index, .with_object, .lazy
 
 ```
+
+```ruby
+Object
+├── BasicObject
+│   └── Kernel
+│       ├── puts
+│       ├── print
+│       ├── p
+│       ├── require
+│       ├── load
+│       ├── raise
+│       ├── include
+│       ├── extend
+│       └── method_missing
+├── Module
+│   └── Class
+│       ├── new
+│       ├── superclass
+│       └── allocate
+├── NilClass
+│   └── nil?
+├── TrueClass
+│   └── to_s
+├── FalseClass
+│   └── to_s
+├── Numeric
+│   ├── Integer
+│   │   ├── +
+│   │   ├── -
+│   │   ├── *
+│   │   ├── /
+│   │   ├── %
+│   │   ├── **
+│   │   ├── to_i
+│   │   ├── to_f
+│   │   ├── even?
+│   │   ├── odd?
+│   │   └── zero?
+│   └── Float
+│       ├── +
+│       ├── -
+│       ├── *
+│       ├── /
+│       ├── %
+│       ├── **
+│       ├── to_i
+│       ├── to_f
+│       ├── ceil
+│       ├── floor
+│       └── round
+├── String
+│   ├── +
+│   ├── *
+│   ├── []
+│   ├── length
+│   ├── size
+│   ├── empty?
+│   ├── include?
+│   ├── start_with?
+│   ├── end_with?
+│   ├── upcase
+│   ├── downcase
+│   ├── capitalize
+│   ├── strip
+│   ├── split
+│   └── gsub
+├── Array
+│   ├── []
+│   ├── length
+│   ├── size
+│   ├── empty?
+│   ├── include?
+│   ├── push
+│   ├── pop
+│   ├── shift
+│   ├── unshift
+│   ├── join
+│   ├── map
+│   ├── select
+│   └── sort
+├── Hash
+│   ├── []
+│   ├── length
+│   ├── size
+│   ├── empty?
+│   ├── include?
+│   ├── keys
+│   ├── values
+│   ├── each
+│   ├── merge
+│   └── delete
+├── Range
+│   ├── include?
+│   ├── first
+│   ├── last
+│   └── each
+├── Regexp
+│   ├── =~
+│   ├── match
+│   └── scan
+├── Symbol
+│   ├── to_s
+│   └── to_sym
+├── Proc
+│   ├── call
+│   └── lambda?
+├── Time
+│   ├── now
+│   ├── to_i
+│   ├── to_f
+│   ├── year
+│   ├── month
+│   ├── day
+│   ├── hour
+│   ├── min
+│   ├── sec
+│   └── strftime
+├── IO
+│   ├── File
+│   │   ├── open
+│   │   ├── read
+│   │   ├── write
+│   │   ├── exists?
+│   │   └── delete
+│   └── Dir
+│       ├── []
+│       ├── chdir
+│       ├── mkdir
+│       ├── rmdir
+│       └── glob
+├── Exception
+│   ├── StandardError
+│   │   ├── ArgumentError
+│   │   ├── IndexError
+│   │   ├── NameError
+│   │   ├── NoMethodError
+│   │   ├── RuntimeError
+│   │   ├── TypeError
+│   │   └── ZeroDivisionError
+│   └── SystemExit
+└── Thread
+    └── ThreadGroup
+```
