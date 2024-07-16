@@ -1,5 +1,7 @@
 # ruby
 
+> ruby info
+
 ```ruby
 BasicObject
    |
